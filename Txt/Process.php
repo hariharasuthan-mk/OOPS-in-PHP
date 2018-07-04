@@ -61,9 +61,10 @@ final class TxtProcess{
         $file_contents = file_get_contents($arg_txt, FILE_USE_INCLUDE_PATH);
         $delimiter     = " ";
         $arr_unique_words = array_unique(explode($delimiter,$file_contents));
-
+	
+	// In Future Enhancement pass this through variables
         $db = new Database("localhost","mysql_user1","mysql_user1");// Connect database
-        $db->selectDatabase("test"); // Select Database  
+        $db->selectDatabase("db_oritsys"); // Select Database  
         // create table
 
         $column_data  = array(
@@ -78,11 +79,10 @@ final class TxtProcess{
                 array(
                   'column_name'  => 'parse_file_details',
                   'column_type'  => 'VARCHAR(100)',
-                ),
-            
+                ),            
         );
     
-        $db->CreateTable("final",$column_data,"id");
+        $db->CreateTable("wordcount",$column_data,"id");
         
     
     
@@ -105,7 +105,7 @@ final class TxtProcess{
               "parse_file_details"=>$parse_file_details,
           );
           
-          $db->Insert("final",$data); // Insert data 
+          $db->Insert("wordcount",$data); // Insert data 
         }
     
     }

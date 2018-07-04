@@ -1,20 +1,30 @@
 # OOPS-in-PHP
 
+Configuration (DATABASE Access details are in Txt/Process.php)
+
+
+
 Assignment -1
 ===============================================================================
 -wordcount.php will not allow multiple files as arguments
 -------------------------------------------------------------------------------
-Command:php wordcount.php big.txt small.txt - Not allowed
+Command:Not allowed
+
+php wordcount.php big.txt small.txt 
+
 Output: For more info, please find the attached screenshot for more information
 ===============================================================================
 Parsing Txt File
 
 This script will not work more than one aruguments
 -------------------------------------------------------------------------------
-Command:php wordcount.php big.txt - Allowed
-Output: For more info, please find the attached screenshot for more information
+Command:Allowed
+
+php wordcount.php big.txt
+
 After sucessful php text parsing as
-php wordcount.php big.txt 
+
+Output: For more info, please find the attached screenshot for more information
 ===============================================================================
 Parsing Txt File
 Executed in 2.90 Seconds

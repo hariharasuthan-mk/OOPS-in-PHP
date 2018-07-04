@@ -17,9 +17,7 @@
 */
 final class Index {
     
-    const DEFAULT_PAGE = 'home';
-    const PAGE_DIR = '../page/';
-    const LAYOUT_DIR = '../layout/';
+    
 
     /**
      * System config.
