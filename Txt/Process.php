@@ -112,10 +112,3 @@ final class TxtProcess{
     
 }
 
-
-
-/*
-$txt_process = new TxtProcess();
-$txt_process->init();
-$txt_process->ReadTxtFile("big.txt");
-*/
